@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  .left {
+    animation: slideRightToLeft 3s 1; 
+  }
+  
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .left1 {
+    animation: slideRightToLeft 2s 1; 
+  }
+  
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .right {
+    animation: slideLeftToRight 3s 1;
+  }
+  @keyframes slideLeftToRight {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .up {
+    position: relative;
+    transform: translateY(100%); 
+    animation: slideUp 1s forwards; 
+  }
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+    }
+  }
+  .up1 {
+    position: relative;
+    transform: translateY(100%); 
+    animation: slideUp 1.4s forwards; 
+  }
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+    }
+  }
+  .up2 {
+    position: relative;
+    transform: translateY(100%); 
+    animation: slideUp 1.6s forwards; 
+  }
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+    }
+  }
+  .up3 {
+    position: relative;
+    transform: translateY(100%); 
+    animation: slideUp 2s forwards; 
+  }
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+    }
+  }
+ 
+  
+  .animated-text {
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    animation: fadeInUp 3s forwards; /* Animation name and duration */
+  }
+  
+  /* Define the fadeInUp animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1; /* Fade the element in (visible) */
+      transform: translateY(0); /* No vertical movement, just opacity change */
+    }
+  }
+  .animated-text4 {
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    animation: fadeInUp 2s forwards; /* Animation name and duration */
+  }
+  
+  /* Define the fadeInUp animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1; /* Fade the element in (visible) */
+      transform: translateY(0); /* No vertical movement, just opacity change */
+    }
+  }
+  .animated-text1 {
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    animation: fadeInUp 0.4s forwards; /* Animation name and duration */
+  }
+  
+  /* Define the fadeInUp animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1; /* Fade the element in (visible) */
+      transform: translateY(0); /* No vertical movement, just opacity change */
+    }
+  }
+  .animated-text2 {
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    animation: fadeInUp 1s forwards; /* Animation name and duration */
+  }
+  
+  /* Define the fadeInUp animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1; /* Fade the element in (visible) */
+      transform: translateY(0); /* No vertical movement, just opacity change */
+    }
+  }
+
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(255, 166, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /*Keeps the content on a single line
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .25em; /* Adjust as needed */
+    animation: 
+      typing 8s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(255, 166, 0, 0); }
+  }
+  
+  .typewriter1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 166, 0); /* The typwriter cursor */
+    white-space: nowrap; /*Keeps the content on a single line
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .25em; Adjust as needed */
+    animation: 
+      /* typing 8s steps(50, end), */
+      blink-carete .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  /* @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  } */
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-carete {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 166, 0); }
+  }
+  
+  .stick-to-character {
+    position: relative;
+  }
+  
+  .stick-to-character::before {
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    animation: fadeInUp 3s forwards;
+    content: "";
+    display: block;
+    
+    background-image: url('./img/Cap.png'); /* Replace with your image URL */
+    background-size: cover;
+    top: 50%; /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
