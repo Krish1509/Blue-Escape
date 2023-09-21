@@ -46,8 +46,8 @@ function About() {
             <div className=" animated-text mt-[5%] mb-10">
               <input
                 type="button"
-                value="LERN MORE"
-                className="bg-[#F2B725] hover:bg-[rgb(247,179,50)] cursor-pointer shadow-md  tracking-[2px] lg:text-[1.3vw] rounded-full text-[3vw] text-[#183c83] hover:border-[2px] border-[1px]   border-[#183B83] hover:border-[#183B83] font-semibold p-[1%] px-[4%] "
+                value="LEARN MORE"
+                className="bg-[#F2B725]  cursor-pointer shadow-md  tracking-[2px] lg:text-[1.3vw] rounded-full text-[3vw] text-[#183c83] hover:border-[2px] border-none font-semibold p-[1%] px-[4%] "
               />
             </div>
           </div>
@@ -84,13 +84,14 @@ function About() {
           </p>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="flex justify-center gap-10  flex-col">
+          <div className="flex gap-10 justify-center">
           <div className="text-center rounded-3xl px-6 py-4  bg-[#183B83] text-white">
             <div className="">
               <div className="flex justify-center my-4">
                 <img src={Hotel} alt="" srcset="" className="w-16 " />
               </div>
-                <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
+              <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
               <p className="w-[300px] text-[1vw] ">
                 Our commitment to excellence is evident in every facet of our
                 service. We handpick hotels that are more than just places to
@@ -106,7 +107,7 @@ function About() {
               <div className="flex justify-center my-4">
                 <img src={Hotel} alt="" srcset="" className="w-16 " />
               </div>
-                <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
+              <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
               <p className="w-[300px] text-[1vw] ">
                 Our commitment to excellence is evident in every facet of our
                 service. We handpick hotels that are more than just places to
@@ -122,7 +123,7 @@ function About() {
               <div className="flex justify-center my-4">
                 <img src={Hotel} alt="" srcset="" className="w-16 " />
               </div>
-                <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
+              <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
               <p className="w-[300px] text-[1vw] ">
                 Our commitment to excellence is evident in every facet of our
                 service. We handpick hotels that are more than just places to
@@ -132,11 +133,46 @@ function About() {
                 authenticity.
               </p>
             </div>
+          </div>
           </div>
 
-          
+          <div className="flex gap-10 justify-center ">
+            <div className="text-center rounded-3xl px-6 py-4  bg-[#183B83] text-white">
+              <div className="">
+                <div className="flex justify-center my-4">
+                  <img src={Hotel} alt="" srcset="" className="w-16 " />
+                </div>
+                <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
+                <p className="w-[300px] text-[1vw] ">
+                  Our commitment to excellence is evident in every facet of our
+                  service. We handpick hotels that are more than just places to
+                  stay; they are havens of luxury, comfort, and character. Each
+                  property is chosen with utmost care to ensure it aligns with
+                  your preferences, whether you seek opulence, serenity, or
+                  authenticity.
+                </p>
+              </div>
+            </div>
+            <div className="text-center rounded-3xl px-6 py-4  bg-[#183B83] text-white">
+              <div className="">
+                <div className="flex justify-center my-4">
+                  <img src={Hotel} alt="" srcset="" className="w-16 " />
+                </div>
+                <h3 className="mx-16  ">HANDPICKED HOTELS</h3>
+                <p className="w-[300px] text-[1vw] ">
+                  Our commitment to excellence is evident in every facet of our
+                  service. We handpick hotels that are more than just places to
+                  stay; they are havens of luxury, comfort, and character. Each
+                  property is chosen with utmost care to ensure it aligns with
+                  your preferences, whether you seek opulence, serenity, or
+                  authenticity.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   );
 }
