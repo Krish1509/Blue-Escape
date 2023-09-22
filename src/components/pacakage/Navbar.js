@@ -23,18 +23,18 @@ function Navbar() {
         </div>
         <nav className="mt-14 flex justify-center  font-bold text-[#183B83]">
           <div className="flex gap-4 justify-center items-center flex-wrap">
-            <div className=" hover:text-white text-center hover:bg-[#183B83]  bg-transparent  hover:rounded-full hover:p-2  cursor-pointer">
-              <a herf="/" onClick={() => handleButtonClick(0)}>
+            <div className=" hover:text-white text-center hover:bg-[#183B83]  bg-transparent  hover:rounded-full hover:p-2  cursor-pointer" onClick={() => handleButtonClick(0)}>  
+              <a herf="/" >
                 Tour Details
               </a>
             </div>
-            <div className=" hover:text-white hover:bg-[#183B83]  bg-transparent  hover:rounded-full hover:p-2   cursor-pointer">
-              <a herf="/business" onClick={() => handleButtonClick(1)}>
+            <div className=" hover:text-white hover:bg-[#183B83]  bg-transparent  hover:rounded-full hover:p-2   cursor-pointer" onClick={() => handleButtonClick(1)}>
+              <a herf="/business" >
                 Inclusions & Exclusions
               </a>
             </div>
-            <div className=" hover:text-white hover:bg-[#183B83] bg-transparent hover:rounded-full hover:p-2   cursor-pointer">
-              <a herf="/entertainment" onClick={() => handleButtonClick(2)}>
+            <div className=" hover:text-white hover:bg-[#183B83] bg-transparent hover:rounded-full hover:p-2   cursor-pointer" onClick={() => handleButtonClick(2)}>
+              <a herf="/entertainment" >
                 Terms & Conditions
               </a>
             </div>
