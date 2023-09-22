@@ -5,10 +5,10 @@ import Tour from "../../img/Tour.jpg";
 // import TourOne from "../../img/TourOne.jpg"
 
 function Navbar() {
-  const [activeDiv, setActiveDiv] = useState(0);
+  const [hoverDiv, sethoverDiv] = useState(0);
 
   const handleButtonClick = (index) => {
-    setActiveDiv(index);
+    sethoverDiv(index);
   };
 
   return (
@@ -23,22 +23,22 @@ function Navbar() {
         </div>
         <nav className="mt-14 flex justify-center  font-bold text-[#183B83]">
           <div className="flex gap-4 justify-center items-center flex-wrap">
-            <div className=" active:text-white text-center active:bg-[#183B83]  bg-transparent  active:rounded-full active:p-2  cursor-pointer">
+            <div className=" hover:text-white text-center hover:bg-[#183B83]  bg-transparent  hover:rounded-full hover:p-2  cursor-pointer">
               <a herf="/" onClick={() => handleButtonClick(0)}>
                 Tour Details
               </a>
             </div>
-            <div className=" active:text-white active:bg-[#183B83]  bg-transparent  active:rounded-full active:p-2   cursor-pointer">
+            <div className=" hover:text-white hover:bg-[#183B83]  bg-transparent  hover:rounded-full hover:p-2   cursor-pointer">
               <a herf="/business" onClick={() => handleButtonClick(1)}>
                 Inclusions & Exclusions
               </a>
             </div>
-            <div className=" active:text-white active:bg-[#183B83] bg-transparent active:rounded-full active:p-2   cursor-pointer">
+            <div className=" hover:text-white hover:bg-[#183B83] bg-transparent hover:rounded-full hover:p-2   cursor-pointer">
               <a herf="/entertainment" onClick={() => handleButtonClick(2)}>
                 Terms & Conditions
               </a>
             </div>
-            <div className=" active:text-white active:bg-[#183B83] p-2 px-3 rounded-full active:px-3 bg-transparent active:rounded-full active:p-2   cursor-pointer">
+            <div className=" hover:text-white hover:bg-[#183B83] p-2 px-3 rounded-full hover:px-3 bg-transparent hover:rounded-full hover:p-2   cursor-pointer">
               <a herf="/health">Enquiry</a>
             </div>
           </div>
@@ -48,7 +48,7 @@ function Navbar() {
       <section>
         <div
           className="flex bg-[#183B83] text-white m-6  p-6 min-[800px]:m-10 min-[800px]:p-8 min-[1000px]:m-12 min-[1100px]:mx-20 min-[1000px]:p-10 rounded-3xl"
-          style={{ display: activeDiv === 0 ? "block" : "none" }}
+          style={{ display: hoverDiv === 0 ? "block" : "none" }}
         >
           <div className="">
             <h3 className="font-semibold  text-[3vw]  min-[500px]:text-[2.7vw] min-[800px]:text-[2.1vw] min-[1000px]:text-[1.3vw]">
@@ -196,7 +196,7 @@ function Navbar() {
       <section>
         <div
           className="flex bg-[#183B83] text-white m-6  p-6 min-[800px]:m-10 min-[800px]:p-8 min-[1000px]:m-12 min-[1100px]:mx-20 min-[1000px]:p-10 rounded-3xl"
-          style={{ display: activeDiv === 1 ? "block" : "none" }}
+          style={{ display: hoverDiv === 1 ? "block" : "none" }}
         >
           <div className="">
             <h3 className="font-semibold  text-[3vw]  min-[500px]:text-[2.7vw] min-[800px]:text-[2.1vw] min-[1000px]:text-[1.3vw]">
@@ -238,7 +238,7 @@ function Navbar() {
       <section>
         <div
           className="flex bg-[#183B83] text-white m-6  p-6 min-[800px]:m-10 min-[800px]:p-8 min-[1000px]:m-12 min-[1100px]:mx-20 min-[1000px]:p-10 rounded-3xl"
-          style={{ display: activeDiv === 2 ? "block" : "none" }}
+          style={{ display: hoverDiv === 2 ? "block" : "none" }}
         >
           <div className="">
             <p className="my-2 text-[3.3vw] min-[500px]:text-[2.5vw] min-[800px]:text-[2vw] min-[1000px]:text-[1.2vw]">
