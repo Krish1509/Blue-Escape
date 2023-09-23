@@ -4,7 +4,7 @@ import Pacakage from './components/Pacakage';
 function App() {
   return (
     <div className="App">
-        <Pacakage/>
+        <About/>
     </div>
   );
 }

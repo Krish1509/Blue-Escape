@@ -4,9 +4,6 @@ function Pacakage() {
   return (
     <div>
     <Navbar/>
-    {/* <TourDetails/> */}
-    {/* <InclusionsExclusions/> */}
-
     </div>
   )
 }

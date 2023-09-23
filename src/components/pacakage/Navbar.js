@@ -1,9 +1,8 @@
-// import React from 'react'
-// import {a} from "react-router-dom";
 import React, { useState } from "react";
-import Tour from "../../img/Tour.jpg";
-// import TourOne from "../../img/TourOne.jpg"
-
+// import Tour from "../../img/Tour.jpg";
+import Tour from "../../img/3.jpg";
+// import Tour from "../../img/Tour.jpg";
+// import Tour from "../../img/Tour.jpg";
 function Navbar() {
   const [hoverDiv, sethoverDiv] = useState(0);
 
@@ -17,7 +16,7 @@ function Navbar() {
         <div className="">
           <img
             src={Tour}
-            className="w-full h-[250px] min-[800px]:h-[300px] min-[1000px]:h-[320px] min-[1150px]:h-[350px] shadow-2xl "
+            className="w-full h-[380px] min-[800px]:h-[400px] min-[1000px]:h-[400px] min-[1150px]:h-[360px] shadow-xl shadow-slate-400"
             alt=""
           />
         </div>
