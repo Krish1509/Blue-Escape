@@ -19,6 +19,17 @@ import Virtual from "../img/Virtual.gif";
 import Social from "../img/Social.png";
 import CupofTea from "../img/CupofTea.png";
 import Feedback from "../img/Feedback.png";
+import Hours from "../img/Hours-removebg-preview.png";
+import Calendar from "../img/Calendar-removebg-preview.png";
+import Sunday from "../img/Sunday-removebg-preview.png";
+import Time from "../img/Time-removebg-preview.png";
+import Call from "../img/call.png";
+import FD from "../img/fb.png";
+import Insta from "../img/Instagram.png";
+import X from "../img/X-Logo.png";
+import Mail from "../img/Mail.png";
+import Location from "../img/Location.png";
+
 
 function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +86,7 @@ function About() {
               <input
                 type="button"
                 value="LEARN MORE"
-                className="bg-[#F2B725]  cursor-pointer shadow-md  tracking-[2px] lg:text-[1.3vw] rounded-full text-[3vw] text-[#183c83] hover:border-[2px] border-none font-semibold p-[2%] px-[5%] sm:p-[1%] sm:px-[4%] "
+                className="bg-[#F2B725]   cursor-pointer shadow-md  tracking-[2px] lg:text-[1.3vw] rounded-full text-[3vw] text-[#183c83]  border-none font-semibold p-[2%] px-[5%] sm:p-[1%] sm:px-[4%] "
               />
             </div>
           </div>
@@ -291,13 +302,13 @@ function About() {
                 srcset=""
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[285px] "
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] mb-1">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] ">
                 Wanderlust Hotline
               </h3>
             </div>
-            <div className="">
-              <img src="" alt="" srcset="" className="" />
-              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+            <div className="flex">
+              <img src={Call} alt="" srcset="" className="h-[23px] mx-1 bg-[#F4F4F4]" />
+              <p className="text-[3.7vw] flex  items-center mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
                 Phone: +1-800-123-4567
               </p>
             </div>
@@ -322,10 +333,11 @@ function About() {
                 Digital Dispatch
               </h3>
             </div>
-            <div className="text-center">
-              <img src="" alt="" srcset="" className="" />
-              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold ">
-                Email: <br/>info@blueescapetravel.com
+            <div className="text-center flex">
+              <img src={Mail} alt="" srcset="" className="w-[24px] h-[23px] mr-1 bg-[#F4F4F4]  " />
+              <p className="text-[3.7vw] flex items-center  mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.1vw] xl:text-[1.2vw] font-semibold ">
+                Email: 
+                info@blueescapetravel.com
               </p>
             </div>
             <div className="flex items-center">
@@ -352,7 +364,8 @@ function About() {
             <div className="">
               <img src="" alt="" srcset="" className="" />
               <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
-                Video Call:<br/> Schedule a virtual consultation
+                Video Call:
+                <br /> Schedule a virtual consultation
               </p>
             </div>
             <div className="flex items-center">
@@ -379,7 +392,8 @@ function About() {
             <div className="">
               <img src="" alt="" srcset="" className="" />
               <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
-                Social Media:<br/> Connect with us on
+                Social Media:
+                <br /> Connect with us on
               </p>
             </div>
             <div className="flex items-center">
@@ -400,14 +414,16 @@ function About() {
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[310px] mb-5 "
               />
               <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.1vw] xl:text-[1.7vw]">
-                Lets have a cup of <br/>tea together
+                Lets have a cup of <br />
+                tea together
               </h3>
             </div>
             <div className="">
               <img src="" alt="" srcset="" className="" />
               <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
-                Address: <br/>123 Adventure Avenue, Traveler's<br/> Haven, World
-                Wanderland
+                Address: <br />
+                123 Adventure Avenue, Traveler's
+                <br /> Haven, World Wanderland
               </p>
             </div>
             <div className="flex items-center">
@@ -444,6 +460,72 @@ function About() {
                 your thoughts. We're always striving to improve.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="flex justify-center mx-2 ">
+        <div className="page-5 my-10 flex flex-wrap lg:hidden flex-col gap-10 justify-center mx-10">
+          <div className="text-white flex items-center my-10 ">
+            <img src={Hours} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+              Hours Of Operation : **
+            </div>
+          </div>
+          <div className="text-white flex items-center text-start  ">
+            <img src={Calendar} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
+              Monday to Friday:
+              
+              10:00 AM - 7:00 PM (Local Time)
+            </div>
+          </div>
+          <div className="text-white flex items-center  my-4">
+            <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+              Sunday: Closed (Because even
+              
+              explorers need a day off!)
+            </div>
+          </div>
+          <div className="text-white flex items-center  ">
+            <img src={Time} alt="" className="w-[20%] bg-white z-10 mr-2" />
+            <div class="z-0 bg-[#183B83] ml-[10px] rounded-full flex items-center py-3 px-5">
+              Saturday: 10:00 AM - 4:00 PM
+              (Local Time)
+            </div>
+          </div>
+          </div>
+        <div className="page-5 my-10 flex flex-wrap flex-col gap-10 justify-center mx-10 max-[1024px]:hidden">
+          <div className="text-white flex items-center my-10 ">
+            <img src={Hours} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+              Hours Of Operation : **
+            </div>
+          </div>
+          <div className="text-white flex items-center text-start  ">
+            <img src={Calendar} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
+              Monday to Friday:
+              
+              10:00 AM - 7:00 PM (Local Time)
+            </div>
+          </div>
+          </div>
+          <div className="page-5 my-10 flex flex-wrap flex-col gap-10 justify-center mx-10 max-[1024px]:hidden">
+          <div className="text-white flex items-center  my-4">
+            <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+              Sunday: Closed (Because even
+              
+              explorers need a day off!)
+            </div>
+          </div>
+          <div className="text-white flex items-center ml-3 ">
+            <img src={Time} alt="" className="w-[110px] bg-white z-10 mr-2" />
+            <div class="z-0 bg-[#183B83] ml-[10px] rounded-full flex items-center py-3 px-5">
+              Saturday: 10:00 AM - 4:00 PM
+              (Local Time)
+            </div>
+          </div>
           </div>
         </div>
       </div>
