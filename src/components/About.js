@@ -62,7 +62,7 @@ function About() {
               </h1>
             </div>
 
-            <div className="text-[10vw] lg:text-[5.5vw] mt-4  text-[#183B83] font-bold ">
+            <div className="text-[10vw] lg:text-[5.5vw] mt-4  text-[#183B83] font-semibold ">
               <h1 className="mb-[-16px] up1 ">
                 <img
                   src={Cap}
@@ -321,7 +321,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+          <div className="rounded-3xl flex flex-col   bg-[#F4F4F4] p-3 py-10">
             <div className="flex flex-col items-center ">
               <img
                 src={Digital}
@@ -490,7 +490,7 @@ function About() {
             <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
               Sunday: Closed (Because even
               
-              explorers need a day off!)
+              explorers need a day off !)
             </div>
           </div>
           <div className="text-white flex items-center  ">
