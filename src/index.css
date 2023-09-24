@@ -276,7 +276,7 @@ body{
     transform: translateX(-100%); /* Move the items to the left of the container */
   }
   100% {
-    transform: translateX(85%); /* Move the items back to their original position */
+    transform: translateX(105%); /* Move the items back to their original position */
     
   }
 }

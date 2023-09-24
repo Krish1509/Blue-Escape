@@ -27,9 +27,8 @@ import Call from "../img/call.png";
 import FD from "../img/fb.png";
 import Insta from "../img/Instagram.png";
 import X from "../img/X-Logo.png";
-import Mail from "../img/Mail.png";
-import Location from "../img/Location.png";
-
+import Mail from "../img/Mail-removebg-preview (1).png";
+import Location from "../img/Location-removebg-preview (1).png";
 
 function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -128,12 +127,12 @@ function About() {
       </div>
 
       <div className="flex justify-center flex-wrap gap-6 2xl:gap-10 mx-6 mt-[-30px]  m-4">
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]    py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Hotel} alt="" className="w-[19%] my-2" />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             HANDPICKED HOTELS
           </h1>
-          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px] lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px]  text-justify min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px] lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             Our commitment to excellence is evident in every facet of our
             service. We handpick hotels that are more than just places to stay;
             they are havens of luxury, comfort, and character. Each property is
@@ -142,12 +141,12 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]  py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Expert} alt="" className="w-[12%] my-2 " />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             EXPERT GUIDES{" "}
           </h1>
-          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    show  lg:w-[380px]  xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px]  text-justify min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    show  lg:w-[380px]  xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             Our experienced guides are your local experts, passionate about
             sharing their knowledge and enthusiasm for the destinations we
             explore. They add depth and context to your journey, making each day
@@ -155,12 +154,12 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]    py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Transport} alt="" className="w-[24%] my-4 mt-6 " />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             BEST TRANSPORTATION
           </h1>
-          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]      lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px]  text-justify min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]      lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             Efficiency and convenience are paramount when it comes to
             transportation. We take care of all the logistics, ensuring seamless
             transitions between destinations. Whether it's a private chauffeur,
@@ -175,7 +174,7 @@ function About() {
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             UNIQUE EXPERIENCES
           </h1>
-          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    min-[650px]:w-[620px]  lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px]  text-justify min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    min-[650px]:w-[620px]  lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             At Blue Escape Holidays, we understand that no two travelers are
             alike, and no two vacations should be either. We pride ourselves on
             creating tailor-made experiences that reflect your unique interests
@@ -185,13 +184,13 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw] py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <div className="flex flex-col items-center text-center z-10">
             <img src={Itenaries} alt="" className="w-[18%] my-2 " />
             <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
               THOUGHTFULL ITINERARIES
             </h1>
-            <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+            <p className="w-[300px]  text-justify min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
               We believe that travel should be meaningful, leaving you with
               memories that last a lifetime. That's why our itineraries are
               thoughtfully designed to immerse you in the culture, history, and
@@ -249,17 +248,17 @@ function About() {
         </div>
       </div>
 
-      <div className="page-3 flex lg:ml-[2%] min-[1050px]:ml-[3%] min-[1100px]:ml-[7%] min-[1200px]:ml-[10%] overflow-x-hidden xl:ml-[12%] mb-[15%] max-[1024px]:hidden my-[12%] ">
-        <div className="bg-[#183B83] down  flex-item3 z-10  rounded-3xl text-white flex items-start text-start flex-col  text-[4vw]   py-[30px]  px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
+      <div className="page-3 flex lg:ml-[2%] min-[1050px]:ml-[3%] min-[1100px]:ml-[7%] min-[1200px]:ml-[10%] lg:overflow-hidden xl:ml-[12%] 2xl:ml-[20%] mb-[15%] max-[1024px]:hidden my-[12%]  ">
+        <div className="bg-[#183B83] down  flex-item3 z-10  rounded-3xl text-white flex items-start text-start flex-col  text-[4vw]   py-[30px]  px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.4vw]  gap-1 shadow-xl  animated-text ">
           <img
             src={Hand}
             alt=""
             className="w-[28%] lg:mx-2  lg:w-[110px] my-2 "
           />
-          <h1 className="font-semibold text-[5.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[2vw] xl:text-[2.2vw] 2xl:text-[1.2vw] xl:mx-2">
+          <h1 className="font-semibold text-[5.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[2vw] xl:text-[2.2vw] 2xl:text-[1.5vw] xl:mx-2 " >
             Join us on a voyage of discovery,
           </h1>
-          <p className="w-[290px] min-[450px]:w-[340px] sm:w-[200px]  lg:w-[380px] xl:w-[445px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[290px]  min-[450px]:w-[340px] sm:w-[200px]  lg:w-[380px] xl:w-[445px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             where every detail is meticulously crafted to provide you with the
             ultimate travel experience. Welcome to Blue Escape Holidays, where
             the world is your playground, and every journey is a masterpiece.
@@ -273,7 +272,7 @@ function About() {
             src={Plane}
             alt=""
             srcset=""
-            className=" w-[80%] min-[550px]-[90%] min-[1100px]:w-[62%] min-[1400px]:w-[68%] 2xl:w-[55%] lg:w-[55%] min-[450px]:w-[55%]"
+            className=" w-[80%] min-[550px]-[90%] min-[1100px]:w-[62%] min-[1400px]:w-[68%] 2xl:w-[77%] 2xl:mt-[20px] lg:w-[55%] min-[450px]:w-[55%] "
           />
         </div>
       </div>
@@ -283,12 +282,12 @@ function About() {
           <h1 className="font-bold text-[6.6vw] sm:text-[6.2vw] md:text-[6vw] lg:text-[5vw] xl:text-[4.7vw]  my-4 ">
             Contact Us
           </h1>
-          <p className="text-[3vw] sm:text-[2.9vw] md:text-[2.6vw] lg:text-[1.5vw] xl:text-[1.6vw] font-semibold my-2">
+          <p className="text-[3vw]  sm:text-[2.9vw] md:text-[2.6vw] lg:text-[1.5vw] xl:text-[1.6vw] font-semibold my-2">
             We're delighted to help you plan your dream getaway. Whether you
             have questions, need assistance with your bookings, or just want to
             chat about travel, we're here for you.
           </p>
-          <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.8vw] lg:text-[2vw] xl:text-[1.9vw] font-bold mb-10">
+          <p className="text-[3.2vw] text-center sm:text-[3vw] md:text-[2.8vw] lg:text-[2vw] xl:text-[1.9vw] font-bold mb-10">
             Reach out to us using the following contact options:
           </p>
         </div>
@@ -302,18 +301,23 @@ function About() {
                 srcset=""
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[285px] "
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] ">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] 2xl:text-[1.7vw] ">
                 Wanderlust Hotline
               </h3>
             </div>
             <div className="flex">
-              <img src={Call} alt="" srcset="" className="h-[23px] mx-1 bg-[#F4F4F4]" />
-              <p className="text-[3.7vw] flex  items-center mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+              <img
+                src={Call}
+                alt=""
+                srcset=""
+                className="h-[23px] mx-1 bg-[#F4F4F4]"
+              />
+              <p className="text-[3.7vw] flex  items-center mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.2vw] lg:text-[1.2vw] 2xl:text-[1.1vw]  font-semibold">
                 Phone: +1-800-123-4567
               </p>
             </div>
             <div className="flex items-center">
-              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+              <p className="text-[3.2vw] text-justify min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
                 Our travel experts are just a phone call away, ready to assist
                 you with any inquiries, booking requests, or travel advice you
                 may need. Don't hesitate to give us a ring and let the adventure
@@ -329,19 +333,25 @@ function About() {
                 srcset=""
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[285px] "
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] 2xl:text-[1.7vw] ">
                 Digital Dispatch
               </h3>
             </div>
-            <div className="text-center flex">
-              <img src={Mail} alt="" srcset="" className="w-[24px] h-[23px] mr-1 bg-[#F4F4F4]  " />
-              <p className="text-[3.7vw] flex items-center  mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.1vw] xl:text-[1.2vw] font-semibold ">
+            <div className=" flex">
+              {/* <img
+                src={Mail}
+                alt=""
+                srcset=""
+                className="w-[24px] h-[23px]  bg-[#F4F4F4]  "
+              /> */}
+              <p className="text-[3.7vw] flex items-center  mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.5vw] lg:text-[1.1vw] xl:text-[1.2vw] 2xl:text-[1.1vw] font-semibold ">
                 Email: 
+                <br/>
                 info@blueescapetravel.com
               </p>
             </div>
             <div className="flex items-center">
-              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+              <p className="text-[3.2vw] text-justify min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
                 Drop us an email anytime, day or night, and our team will get
                 back to you promptly. Whether you're looking for detailed
                 itineraries, destination recommendations, or just want to share
@@ -355,21 +365,21 @@ function About() {
                 src={Virtual}
                 alt=""
                 srcset=""
-                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[200px] xl:w-[200px] "
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[200px] xl:w-[200px]  "
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] 2xl:text-[1.6vw]">
                 Virtual Consultations
               </h3>
             </div>
             <div className="">
               <img src="" alt="" srcset="" className="" />
-              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.2vw]  lg:text-[1vw]  2xl:text-[1vw] font-semibold">
                 Video Call:
                 <br /> Schedule a virtual consultation
               </p>
             </div>
             <div className="flex items-center">
-              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+              <p className="text-[3.2vw] text-justify min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
                 Want a face-to-face chat with one of our travel experts? We
                 offer virtual consultations, so you can discuss your travel
                 plans from the comfort of your own home. Schedule a video call,
@@ -385,23 +395,23 @@ function About() {
                 srcset=""
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[228px] xl:w-[225px] mb-5"
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] 2xl:text-[1.7vw]">
                 Social Adventurers
               </h3>
             </div>
             <div className="">
-              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+              <p className="text-[3.7vw] mb-1  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.2vw] lg:text-[1.2vw] 2xl:text-[1vw]  font-semibold">
                 Social Media:
-                <br /> Connect with us on
+                 Connect<br /> with us on
               </p>
-              <div className="flex justify-center gap-2">
-              <img src={FD} alt="" srcset="" className="w-[20px]" />
-              <img src={Insta} alt="" srcset="" className="w-[20px]" />
-              <img src={X} alt="" srcset="" className="w-[20px]" />
+              <div className="flex justify-center gap-2 mb-3">
+                <img src={FD} alt="" srcset="" className="w-[20px]" />
+                <img src={Insta} alt="" srcset="" className="w-[20px]" />
+                <img src={X} alt="" srcset="" className="w-[20px]" />
               </div>
             </div>
             <div className="flex items-center">
-              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+              <p className="text-[3.2vw] text-justify min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
                 Join our online community of fellow travelers, where you can
                 find travel inspiration, tips, and engage in discussions about
                 your favorite destinations. Follow us on social media to stay
@@ -417,21 +427,25 @@ function About() {
                 srcset=""
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[310px] mb-5 "
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.1vw] xl:text-[1.7vw]">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[1.2vw] xl:text-[1.7vw] 2xl:text-[1.4vw]">
                 Lets have a cup of <br />
                 tea together
               </h3>
             </div>
             <div className="flex">
-              <img src={Location} alt="" srcset="" className="h-[20px] mr-[-14px]" />
-              <p className="text-[3.6vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[2.9vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.9vw] lg:text-[1.4vw] xl:text-[1.2vw] font-semibold">
-                Address: 
-                123 Adventure Avenue,<br /> Traveler's
-                 Haven, World Wanderland
+              <img
+                src={Location}
+                alt=""
+                srcset=""
+                className="h-[20px] "
+              />
+              <p className="text-[3.6vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[2.9vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.9vw] lg:text-[1.1vw] xl:text-[1.2vw] 2xl:text-[1vw] font-semibold">
+                Address: 123 Adventure Avenue,
+                <br /> Traveler's Haven, World <br/> Wanderland
               </p>
             </div>
             <div className="flex items-center">
-              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+              <p className="text-[3.2vw] text-justify min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
                 If you prefer a more personal touch, feel free to visit our
                 office. Our travel enthusiasts will be thrilled to meet you in
                 person, share stories, and plan your next adventure together.
@@ -446,18 +460,18 @@ function About() {
                 srcset=""
                 className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[212px] xl:w-[230px] mb-5"
               />
-              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] 2xl:text-[1.7vw]">
                 Feedback
               </h3>
             </div>
             <div className="">
               <img src="" alt="" srcset="" className="" />
-              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.3vw] lg:text-[1.3vw] 2xl:[1.1vw ] font-semibold">
                 Share your thoughts
               </p>
             </div>
             <div className="flex items-center">
-              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+              <p className="text-[3.2vw] text-justify min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
                 Your feedback is invaluable to us. Whether you've already
                 experienced a Blue Escape journey or just have suggestions to
                 make our services even better, use our feedback portal to share
@@ -469,70 +483,80 @@ function About() {
 
 
 
-        <div className="flex justify-center mx-2 text-[2.7vw] min-[550px]:text-[2.6vw]  min-[700px]:text-[2.5vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw]">
-        <div className="page-5 my-10 flex flex-wrap lg:hidden flex-col gap-10 justify-center mx-10">
-          <div className="text-white flex items-center my-10 ">
-            <img src={Hours} alt="" className="w-[20%] bg-white z-10 mr-3" />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
-              Hours Of Operation : **
+
+
+        <div className="flex justify-center  text-[2.8vw] min-[550px]:text-[2.7vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] mt-[-22px] sm:mt-10">
+          <div className="page-5 my-8 flex flex-wrap lg:hidden flex-col gap-4 sm:gap-6 justify-center mx-4">
+            <div className="text-white flex items-center my-1 mb-2 sm:mb-5 md:mb-10 left">
+              <img src={Hours} alt="" className="w-[26%] bg-white z-10 mr-3" />
+              <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
+                Hours Of Operation : **
+              </div>
+            </div>
+            <div className="text-white flex items-center text-start right ">
+              <img
+                src={Calendar}
+                alt=""
+                className="w-[26%] bg-white z-10 mr-3"
+              />
+              <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
+                Monday to Friday: 10:00 AM - 7:00 PM (Local Time)
+              </div>
+            </div>
+            <div className="text-white flex items-center  my-1 left">
+              <img
+                src={Sunday}
+                alt=""
+                className="w-[26%] bg-white z-10 mr-3 "
+              />
+              <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+                Sunday: Closed (Because even explorers need a day off !)
+              </div>
+            </div>
+            <div className="text-white flex items-center  right">
+              <img src={Time} alt="" className="w-[26%] bg-white z-10 mr-2" />
+              <div class="z-0 bg-[#183B83] ml-[10px] rounded-full flex items-center py-3 px-5">
+                Saturday: 10:00 AM - 4:00 PM (Local Time)
+              </div>
             </div>
           </div>
+
+
+<div className="max-[1024px]:hidden flex text-[1.7vw] xl:text-[1.2vw] 2xl:text-[1.3vw]">
+          <div className="page-5 my-8 flex flex-wrap flex-col  justify-center mx-10 left">
+            <div className="text-white flex items-center my-10 ">
+              <img src={Hours} alt="" className="w-[19%] bg-white z-10 mr-3" />
+              <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+                Hours Of Operation : **
+              </div>
+            </div>
+          
+            <div className="text-white flex items-center  my-4">
+              <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3" />
+              <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+                Sunday: Closed (Because even explorers need a day off!)
+              </div>
+            </div>
+          </div>
+          <div className="page-5 my-10 flex flex-wrap flex-col gap-10 justify-center mx-10  right">
           <div className="text-white flex items-center text-start  ">
-            <img src={Calendar} alt="" className="w-[20%] bg-white z-10 mr-3" />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
-              Monday to Friday:
-              
-              10:00 AM - 7:00 PM (Local Time)
+              <img
+                src={Calendar}
+                alt=""
+                className="w-[20%] bg-white z-10 mr-3"
+              />
+              <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
+                Monday to Friday: 10:00 AM - 7:00 PM (Local Time)
+              </div>
             </div>
-          </div>
-          <div className="text-white flex items-center  my-4">
-            <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3 " />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
-              Sunday: Closed (Because even
-              
-              explorers need a day off !)
+            <div className="text-white flex items-center ml-2 mt-2">
+              <img src={Time} alt="" className="w-[20%] bg-white z-10 mr-2" />
+              <div class="z-0 bg-[#183B83] ml-[10px] rounded-full flex items-center py-3 px-5">
+                Saturday: 10:00 AM - 4:00 PM (Local Time)
+              </div>
             </div>
-          </div>
-          <div className="text-white flex items-center  ">
-            <img src={Time} alt="" className="w-[20%] bg-white z-10 mr-2" />
-            <div class="z-0 bg-[#183B83] ml-[10px] rounded-full flex items-center py-3 px-5">
-              Saturday: 10:00 AM - 4:00 PM
-              (Local Time)
+          
             </div>
-          </div>
-          </div>
-        <div className="page-5 my-10 flex flex-wrap flex-col gap-10 justify-center mx-10 max-[1024px]:hidden">
-          <div className="text-white flex items-center my-10 ">
-            <img src={Hours} alt="" className="w-[20%] bg-white z-10 mr-3" />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
-              Hours Of Operation : **
-            </div>
-          </div>
-          <div className="text-white flex items-center text-start  ">
-            <img src={Calendar} alt="" className="w-[20%] bg-white z-10 mr-3" />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
-              Monday to Friday:
-              
-              10:00 AM - 7:00 PM (Local Time)
-            </div>
-          </div>
-          </div>
-          <div className="page-5 my-10 flex flex-wrap flex-col gap-10 justify-center mx-10 max-[1024px]:hidden">
-          <div className="text-white flex items-center  my-4">
-            <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3" />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
-              Sunday: Closed (Because even
-              
-              explorers need a day off!)
-            </div>
-          </div>
-          <div className="text-white flex items-center ml-3 ">
-            <img src={Time} alt="" className="w-[110px] bg-white z-10 mr-2" />
-            <div class="z-0 bg-[#183B83] ml-[10px] rounded-full flex items-center py-3 px-5">
-              Saturday: 10:00 AM - 4:00 PM
-              (Local Time)
-            </div>
-          </div>
           </div>
         </div>
       </div>
