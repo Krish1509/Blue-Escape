@@ -1,6 +1,5 @@
 // import React from "react";
 import React, { useState, useEffect } from "react";
-import { Element, scroller } from "react-scroll";
 import Cap from "../img/Cap.png";
 import Tourist from "../img/Tourist.png";
 import SignBord from "../img/SignBoard.png";
@@ -13,8 +12,13 @@ import Traveller from "../img/Traveller.png";
 import Expert from "../img/Expert.png";
 import Hand from "../img/Handshake-removebg-preview.png";
 import Plane from "../img/Plane-preview.png";
-import Unique from "../img/Unique.png";
 import Flex from "../img/flex.png";
+import Hotline from "../img/Hotline.gif";
+import Digital from "../img/Digital Dispatch.gif";
+import Virtual from "../img/Virtual.gif";
+import Social from "../img/Social.png";
+import CupofTea from "../img/CupofTea.png";
+import Feedback from "../img/Feedback.png";
 
 function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -234,7 +238,7 @@ function About() {
         </div>
       </div>
 
-      <div className="page-3 flex lg:ml-[2%] overflow-x-hidden xl:ml-[12%] mb-[15%] max-[1024px]:hidden my-[12%] ">
+      <div className="page-3 flex lg:ml-[2%] min-[1050px]:ml-[3%] min-[1100px]:ml-[7%] min-[1200px]:ml-[10%] overflow-x-hidden xl:ml-[12%] mb-[15%] max-[1024px]:hidden my-[12%] ">
         <div className="bg-[#183B83] down  flex-item3 z-10  rounded-3xl text-white flex items-start text-start flex-col  text-[4vw]   py-[30px]  px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img
             src={Hand}
@@ -264,16 +268,183 @@ function About() {
       </div>
 
       <div className="page-4 flex flex-col justify-center text-center text-[#183c83]">
-        <div className="mx-[7%] sm:mx-[8%] md:mx-[9%]   ">
-          <h1 className="font-bold text-[6.6vw] sm:text-[6.2vw] md:text-[6vw] lg:text-[5.2vw] xl:text-[5vw]  my-4 ">Contact Us</h1>
-          <p className="text-[3vw] sm:text-[2.9vw] md:text-[2.6vw] lg:text-[2.1vw] xl:text-[2vw] font-semibold my-2">
+        <div className="mx-[7%] sm:mx-[8%] md:mx-[8%] lg:mx-[6%]   ">
+          <h1 className="font-bold text-[6.6vw] sm:text-[6.2vw] md:text-[6vw] lg:text-[5vw] xl:text-[4.7vw]  my-4 ">
+            Contact Us
+          </h1>
+          <p className="text-[3vw] sm:text-[2.9vw] md:text-[2.6vw] lg:text-[1.5vw] xl:text-[1.6vw] font-semibold my-2">
             We're delighted to help you plan your dream getaway. Whether you
             have questions, need assistance with your bookings, or just want to
             chat about travel, we're here for you.
           </p>
-          <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.8vw] lg:text-[2.5vw] xl:text-[2.3vw] font-bold mb-10">
+          <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.8vw] lg:text-[2vw] xl:text-[1.9vw] font-bold mb-10">
             Reach out to us using the following contact options:
           </p>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-5 mx-10  mb-10">
+          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+            <div className="flex flex-col items-center ">
+              <img
+                src={Hotline}
+                alt=""
+                srcset=""
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[285px] "
+              />
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw] mb-1">
+                Wanderlust Hotline
+              </h3>
+            </div>
+            <div className="">
+              <img src="" alt="" srcset="" className="" />
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+                Phone: +1-800-123-4567
+              </p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+                Our travel experts are just a phone call away, ready to assist
+                you with any inquiries, booking requests, or travel advice you
+                may need. Don't hesitate to give us a ring and let the adventure
+                begin!
+              </p>
+            </div>
+          </div>
+          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+            <div className="flex flex-col items-center ">
+              <img
+                src={Digital}
+                alt=""
+                srcset=""
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[285px] "
+              />
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+                Digital Dispatch
+              </h3>
+            </div>
+            <div className="text-center">
+              <img src="" alt="" srcset="" className="" />
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold ">
+                Email: <br/>info@blueescapetravel.com
+              </p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+                Drop us an email anytime, day or night, and our team will get
+                back to you promptly. Whether you're looking for detailed
+                itineraries, destination recommendations, or just want to share
+                your travel aspirations, our inbox is open 24/7.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+            <div className="flex flex-col items-center ">
+              <img
+                src={Virtual}
+                alt=""
+                srcset=""
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[200px] xl:w-[200px] "
+              />
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+                Virtual Consultations
+              </h3>
+            </div>
+            <div className="">
+              <img src="" alt="" srcset="" className="" />
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+                Video Call:<br/> Schedule a virtual consultation
+              </p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+                Want a face-to-face chat with one of our travel experts? We
+                offer virtual consultations, so you can discuss your travel
+                plans from the comfort of your own home. Schedule a video call,
+                and we'll be there to assist you.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+            <div className="flex flex-col items-center ">
+              <img
+                src={Social}
+                alt=""
+                srcset=""
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[228px] xl:w-[225px] mb-5"
+              />
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+                Social Adventurers
+              </h3>
+            </div>
+            <div className="">
+              <img src="" alt="" srcset="" className="" />
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+                Social Media:<br/> Connect with us on
+              </p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+                Join our online community of fellow travelers, where you can
+                find travel inspiration, tips, and engage in discussions about
+                your favorite destinations. Follow us on social media to stay
+                updated with the latest travel trends and promotions.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+            <div className="flex flex-col items-center ">
+              <img
+                src={CupofTea}
+                alt=""
+                srcset=""
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[282px] xl:w-[310px] mb-5 "
+              />
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.1vw] xl:text-[1.7vw]">
+                Lets have a cup of <br/>tea together
+              </h3>
+            </div>
+            <div className="">
+              <img src="" alt="" srcset="" className="" />
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+                Address: <br/>123 Adventure Avenue, Traveler's<br/> Haven, World
+                Wanderland
+              </p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+                If you prefer a more personal touch, feel free to visit our
+                office. Our travel enthusiasts will be thrilled to meet you in
+                person, share stories, and plan your next adventure together.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-3xl flex flex-col items-center  bg-[#F4F4F4] p-3 py-10">
+            <div className="flex flex-col items-center ">
+              <img
+                src={Feedback}
+                alt=""
+                srcset=""
+                className="w-[200px] min-[550px]:w-[250px]  min-[700px]:w-[270px] min-[920px]:w-[280px] lg:w-[212px] xl:w-[230px] mb-5"
+              />
+              <h3 className="font-semibold mb-1  text-[4.5vw] min-[550px]:text-[4.1vw]  min-[700px]:text-[3.8vw] min-[850px]:text-[2.7vw] lg:text-[2.2vw] xl:text-[1.9vw]">
+                Feedback
+              </h3>
+            </div>
+            <div className="">
+              <img src="" alt="" srcset="" className="" />
+              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
+                Share your thoughts
+              </p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
+                Your feedback is invaluable to us. Whether you've already
+                experienced a Blue Escape journey or just have suggestions to
+                make our services even better, use our feedback portal to share
+                your thoughts. We're always striving to improve.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
