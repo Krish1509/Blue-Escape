@@ -98,7 +98,7 @@ function About() {
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             HANDPICKED HOTELS
           </h1>
-          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px] lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             Our commitment to excellence is evident in every facet of our
             service. We handpick hotels that are more than just places to stay;
             they are havens of luxury, comfort, and character. Each property is
@@ -112,7 +112,7 @@ function About() {
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             EXPERT GUIDES{" "}
           </h1>
-          <p className="w-[300px]min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    show  lg:w-[380px]  xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    show  lg:w-[380px]  xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             Our experienced guides are your local experts, passionate about
             sharing their knowledge and enthusiasm for the destinations we
             explore. They add depth and context to your journey, making each day
@@ -125,7 +125,7 @@ function About() {
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             BEST TRANSPORTATION
           </h1>
-          <p className="w-[300px]min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]      lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]      lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             Efficiency and convenience are paramount when it comes to
             transportation. We take care of all the logistics, ensuring seamless
             transitions between destinations. Whether it's a private chauffeur,
@@ -136,11 +136,11 @@ function About() {
         </div>
 
         <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
-          <img src={Itenaries} alt="" className="w-[18%] my-2" />
+          <img src={Flex} alt="" className="w-[95px] " />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             UNIQUE EXPERIENCES
           </h1>
-          <p className="w-[300px]min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    min-[650px]:w-[620px]  lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]    min-[650px]:w-[620px]  lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             At Blue Escape Holidays, we understand that no two travelers are
             alike, and no two vacations should be either. We pride ourselves on
             creating tailor-made experiences that reflect your unique interests
@@ -156,7 +156,7 @@ function About() {
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             THOUGHTFULL ITINERARIES
           </h1>
-          <p className="w-[300px]min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             We believe that travel should be meaningful, leaving you with
             memories that last a lifetime. That's why our itineraries are
             thoughtfully designed to immerse you in the culture, history, and
@@ -181,7 +181,7 @@ function About() {
             </div> */}
         </div>
 
-      <div className="my-[9%]  min-[850px]:hidden  lg:mt-[15%] xl:mt-[11%] 2xl:w-[55%] ">
+      <div className="my-[9%]  lg:hidden  lg:mt-[15%] xl:mt-[11%] 2xl:w-[55%] ">
             <div className="flex justify-center  ">
               <img
                 src={Traveller}
@@ -196,20 +196,36 @@ function About() {
             </div>
           </div>
 
-      <div className="page-3 flex justify-center f">
-        <div className="bg-[#183B83] down mx-5 flex-item2 z-10 rounded-3xl text-white flex items-center text-center flex-col  text-[4vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+      <div className="page-3 flex justify-center mb-10 min-[1024px]:hidden">
+        <div className="bg-[#183B83] down mx-5 flex-item2 z-0  rounded-3xl text-white flex items-center text-center flex-col  text-[4vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
           <img src={Hand} alt="" className="w-[28%] my-2" />
           <h1 className="font-semibold text-[5.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             Join us on a voyage of discovery,
           </h1>
-          <p className="w-[300px] min-[450px]:w-[340px]  lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[290px] min-[450px]:w-[340px]  lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             where every detail is meticulously crafted to provide you with the
             ultimate travel experience. Welcome to Blue Escape Holidays, where
             the world is your playground, and every journey is a masterpiece.
           </p>
         </div> 
-        <div className="absolute flex-item  flex justify-center z-0">
-          <img src={Plane} alt="" srcset="" className=" w-[60%]" />
+        <div className="absolute flex-item  flex justify-center z-0 my-1">
+          <img src={Plane} alt="" srcset="" className=" w-[80%] min-[450px]:w-[55%]" />
+        </div>
+       </div>
+      <div className="page-3 flex ml-[10%] mb-10 max-[1024px]:hidden my-[8%]">
+        <div className="bg-[#183B83] down  flex-item3 z-10  rounded-3xl text-white flex items-start text-start flex-col  text-[4vw]   py-[30px]  px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+            <img src={Hand} alt="" className="w-[28%] lg:mx-2  lg:w-[110px] my-2 " />
+          <h1 className="font-semibold text-[5.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[2vw] xl:text-[2.2vw] 2xl:text-[1.2vw] xl:mx-2">
+            Join us on a voyage of discovery,
+          </h1>
+          <p className="w-[290px] min-[450px]:w-[340px]  lg:w-[380px] xl:w-[445px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+            where every detail is meticulously crafted to provide you with the
+            ultimate travel experience. Welcome to Blue Escape Holidays, where
+            the world is your playground, and every journey is a masterpiece.
+          </p>
+        </div> 
+        <div className="absolute flex-items  flex justify-center z-0 my-1 ">
+          <img src={Plane} alt="" srcset="" className=" w-[80%] min-[1100px]:w-[62%] min-[1400px]:w-[68%] 2xl:w-[55%] lg:w-[55%] min-[450px]:w-[55%]" />
         </div>
        </div>
     </div>
