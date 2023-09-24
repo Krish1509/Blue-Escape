@@ -13,6 +13,33 @@
       transform: translateX(0%);
     }
   }
+
+
+  .leftTow {
+    animation: slideRightToLeft 8s 3; 
+  }
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .rightTow {
+    animation: slideLeftToRight 8s 3;
+  }
+  @keyframes slideLeftToRight {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+
   .left1 {
     animation: slideRightToLeft 2s 1; 
   }
@@ -201,3 +228,38 @@
 /* ::-webkit-scrollbar-thumb:hover {
   background: #183B83;  */
 /* } */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start from the top */
+  height: 300px; /* Set a fixed height for the container */
+}
+
+.flex-item {
+  animation: moveRight 5s forwards;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%); /* Move the items to the left of the container */
+    opacity: 0; /* Initially hide the items */
+  }
+  100% {
+    transform: translateX(100%); /* Move the items back to their original position */
+    opacity: 1; /* Make the items fully visible */
+  }
+}
+.flex-item2 {
+  animation: op 5s forwards;
+}
+
+@keyframes op {
+  0% {
+    opacity: 0; /* Initially hide the items */
+  }
+  100% {
+    opacity: 1; /* Make the items fully visible */
+  }
+}
