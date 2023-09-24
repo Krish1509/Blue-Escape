@@ -337,7 +337,7 @@ function About() {
                 Digital Dispatch
               </h3>
             </div>
-            <div className=" flex">
+            <div className=" flex items-center justify-center">
               {/* <img
                 src={Mail}
                 alt=""
