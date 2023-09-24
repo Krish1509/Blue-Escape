@@ -273,7 +273,20 @@
     transform: translateX(-100%); /* Move the items to the left of the container */
   }
   100% {
-    transform: translateX(106%); /* Move the items back to their original position */
+    transform: translateX(85%); /* Move the items back to their original position */
+    
+  }
+}
+.flex-it {
+  animation: m 5s forwards;
+}
+
+@keyframes m {
+  0% {
+    transform: translateX(-100%); /* Move the items to the left of the container */
+  }
+  100% {
+    transform: translateX(80%); /* Move the items back to their original position */
     
   }
 }

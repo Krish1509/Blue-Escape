@@ -1,4 +1,6 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
+import { Element, scroller } from "react-scroll";
 import Cap from "../img/Cap.png";
 import Tourist from "../img/Tourist.png";
 import SignBord from "../img/SignBoard.png";
@@ -15,9 +17,27 @@ import Unique from "../img/Unique.png";
 import Flex from "../img/flex.png";
 
 function About() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const triggerOffset = window.innerHeight * 0.75; // Adjust this value as needed
+
+      if (!isVisible && scrollTop > triggerOffset) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isVisible]);
   return (
-    <div className=" ">
-      <div className="Page1 mx-6 lg:mx-20 flex flex-col justify-center  gap-6 ">
+    <div className={`box ${isVisible ? "visible" : ""}`}>
+      <div
+        className="Page1 mx-6 lg:mx-20 flex flex-col justify-center  gap-6 "
+        name="scroll-target"
+      >
         <div className="lg:flex lg:gap-8 lg:justify-between mb-14 md:mb-4 ">
           <div className="">
             <div className="mt-10 lg:mt-16 flex left1 tracking-[2px] font-semibold mb-10">
@@ -71,29 +91,29 @@ function About() {
           </div>
         </div>
       </div>
-    
+
       <div className="Page2 my-10 flex max-[1025px]:flex-col mx-20 gap-6 max-[1025px]:mx-10 max-[600px]:mx-6">
         <div className="text-[#183B83] felx flex-col justify-center  ">
-          <h2 className=" text-[6vw] sm:text-[4.3vw] md:text-[3.6vw] lg:text-[3vw] xl:text-[2.9vw] font-semibold">
+          <h2 className="left text-[6vw] sm:text-[4.3vw] md:text-[3.6vw] lg:text-[3vw] xl:text-[2.9vw] font-semibold">
             At Blue Escape Holidays,
           </h2>
-          <p className="text-[3.5vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.4vw] ">
+          <p className="left text-[3.5vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.4vw] ">
             we understand that discerning travelers seek more than just a
             vacation; they yearn for immersive experiences that touch the heart
             and soul.
           </p>
-          <p className="text-[3.5vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.4vw] ">
+          <p className="left text-[3.5vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.4vw] ">
             That's why we specialize in crafting bespoke journeys across the
             globe, meticulously curated to cater to your every desire.
           </p>
         </div>
-        <div className=" m-4 mt-8 flex justify-center">
+        <div className="right m-4 mt-8 flex justify-center">
           <img src={Map} alt="" className="" srcset="" />
         </div>
       </div>
 
       <div className="flex justify-center flex-wrap gap-6 2xl:gap-10 mx-6 mt-[-30px]  m-4">
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Hotel} alt="" className="w-[19%] my-2" />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             HANDPICKED HOTELS
@@ -107,7 +127,7 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Expert} alt="" className="w-[12%] my-2 " />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             EXPERT GUIDES{" "}
@@ -120,7 +140,7 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Transport} alt="" className="w-[24%] my-4 mt-6 " />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             BEST TRANSPORTATION
@@ -135,7 +155,7 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text  ">
           <img src={Flex} alt="" className="w-[95px] " />
           <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             UNIQUE EXPERIENCES
@@ -150,23 +170,23 @@ function About() {
           </p>
         </div>
 
-        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+        <div className="bg-[#183B83]  rounded-3xl text-white flex flex-col items-center text-center text-[3.2vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <div className="flex flex-col items-center text-center z-10">
-          <img src={Itenaries} alt="" className="w-[18%] my-2 " />
-          <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
-            THOUGHTFULL ITINERARIES
-          </h1>
-          <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
-            We believe that travel should be meaningful, leaving you with
-            memories that last a lifetime. That's why our itineraries are
-            thoughtfully designed to immerse you in the culture, history, and
-            natural beauty of your chosen destination. Whether you're exploring
-            ancient ruins, savoring local cuisine, or embarking on
-            once-in-a-lifetime adventures, we ensure that every moment of your
-            journey is rich in significance.
-          </p>
+            <img src={Itenaries} alt="" className="w-[18%] my-2 " />
+            <h1 className="font-semibold text-[3.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
+              THOUGHTFULL ITINERARIES
+            </h1>
+            <p className="w-[300px] min-[450px]:w-[450px]  min-[650px]:w-[620px] md:w-[660px]     lg:w-[380px] xl:w-[345px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+              We believe that travel should be meaningful, leaving you with
+              memories that last a lifetime. That's why our itineraries are
+              thoughtfully designed to immerse you in the culture, history, and
+              natural beauty of your chosen destination. Whether you're
+              exploring ancient ruins, savoring local cuisine, or embarking on
+              once-in-a-lifetime adventures, we ensure that every moment of your
+              journey is rich in significance.
+            </p>
           </div>
-      </div>
+        </div>
         {/* <div className="flex justify-center z-[-1] ">
               <img
                 src={Traveller}
@@ -179,25 +199,21 @@ function About() {
                 alt="logo"
               />
             </div> */}
-        </div>
+      </div>
 
       <div className="my-[9%]  lg:hidden  lg:mt-[15%] xl:mt-[11%] 2xl:w-[55%] ">
-            <div className="flex justify-center  ">
-              <img
-                src={Traveller}
-                className=" w-[40vw] ml-[px]  z-10 right  "
-                alt="logo"
-              />
-              <img
-                src={Road}
-                className="  w-[40vw] ml-[-50px] left "
-                alt="logo"
-              />
-            </div>
-          </div>
+        <div className="flex justify-center  ">
+          <img
+            src={Traveller}
+            className=" w-[40vw] ml-[px]  z-10 right  "
+            alt="logo"
+          />
+          <img src={Road} className="  w-[40vw] ml-[-50px] left " alt="logo" />
+        </div>
+      </div>
 
       <div className="page-3 flex justify-center mb-10 min-[1024px]:hidden">
-        <div className="bg-[#183B83] down mx-5 flex-item2 z-0  rounded-3xl text-white flex items-center text-center flex-col  text-[4vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
+        <div className="bg-[#183B83] down mx-5 flex-item2 z-0  rounded-3xl text-white flex items-center text-center flex-col  text-[4vw]   py-[30px] px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
           <img src={Hand} alt="" className="w-[28%] my-2" />
           <h1 className="font-semibold text-[5.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] xl:text-[1.3vw] 2xl:text-[1.2vw]">
             Join us on a voyage of discovery,
@@ -207,27 +223,59 @@ function About() {
             ultimate travel experience. Welcome to Blue Escape Holidays, where
             the world is your playground, and every journey is a masterpiece.
           </p>
-        </div> 
-        <div className="absolute flex-item  flex justify-center z-0 my-1">
-          <img src={Plane} alt="" srcset="" className=" w-[80%] min-[450px]:w-[55%]" />
         </div>
-       </div>
-      <div className="page-3 flex ml-[10%] mb-10 max-[1024px]:hidden my-[8%]">
-        <div className="bg-[#183B83] down  flex-item3 z-10  rounded-3xl text-white flex items-start text-start flex-col  text-[4vw]   py-[30px]  px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.1vw] gap-1 shadow-xl">
-            <img src={Hand} alt="" className="w-[28%] lg:mx-2  lg:w-[110px] my-2 " />
+        <div className="absolute flex-item  flex justify-center z-0 my-1">
+          <img
+            src={Plane}
+            alt=""
+            srcset=""
+            className=" w-[80%] min-[450px]:w-[55%]"
+          />
+        </div>
+      </div>
+
+      <div className="page-3 flex lg:ml-[2%] overflow-x-hidden xl:ml-[12%] mb-[15%] max-[1024px]:hidden my-[12%] ">
+        <div className="bg-[#183B83] down  flex-item3 z-10  rounded-3xl text-white flex items-start text-start flex-col  text-[4vw]   py-[30px]  px-[10px] min-[450px]:text-[2.8vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.1vw] gap-1 shadow-xl  animated-text ">
+          <img
+            src={Hand}
+            alt=""
+            className="w-[28%] lg:mx-2  lg:w-[110px] my-2 "
+          />
           <h1 className="font-semibold text-[5.5vw] min-[450px]:text-[3vw] md:text-[2.3vw] lg:text-[2vw] xl:text-[2.2vw] 2xl:text-[1.2vw] xl:mx-2">
             Join us on a voyage of discovery,
           </h1>
-          <p className="w-[290px] min-[450px]:w-[340px]  lg:w-[380px] xl:w-[445px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
+          <p className="w-[290px] min-[450px]:w-[340px] sm:w-[200px]  lg:w-[380px] xl:w-[445px] xl:mx-2 2xl:w-[490px] 2xl:mx-3">
             where every detail is meticulously crafted to provide you with the
             ultimate travel experience. Welcome to Blue Escape Holidays, where
             the world is your playground, and every journey is a masterpiece.
           </p>
-        </div> 
-        <div className="absolute flex-items  flex justify-center z-0 my-1 ">
-          <img src={Plane} alt="" srcset="" className=" w-[80%] min-[1100px]:w-[62%] min-[1400px]:w-[68%] 2xl:w-[55%] lg:w-[55%] min-[450px]:w-[55%]" />
         </div>
-       </div>
+        {/* <div className="absolute flex-it min-[1280px]:hid  :hidden   flex justify-center z-0 my-1 ">
+          <img src={Plane} alt="" srcset="" className=" w-[80%] min-[550px]-[90%] min-[1100px]:w-[62%] min-[1400px]:w-[68%] 2xl:w-[55%] lg:w-[55%] min-[450px]:w-[55%]" />
+        </div> */}
+        <div className="absolute flex-items   flex justify-center z-0 my-1 ">
+          <img
+            src={Plane}
+            alt=""
+            srcset=""
+            className=" w-[80%] min-[550px]-[90%] min-[1100px]:w-[62%] min-[1400px]:w-[68%] 2xl:w-[55%] lg:w-[55%] min-[450px]:w-[55%]"
+          />
+        </div>
+      </div>
+
+      <div className="page-4 flex flex-col justify-center text-center text-[#183c83]">
+        <div className="mx-[7%] sm:mx-[8%] md:mx-[9%]   ">
+          <h1 className="font-bold text-[6.6vw] sm:text-[6.2vw] md:text-[6vw] lg:text-[5.2vw] xl:text-[5vw]  my-4 ">Contact Us</h1>
+          <p className="text-[3vw] sm:text-[2.9vw] md:text-[2.6vw] lg:text-[2.1vw] xl:text-[2vw] font-semibold my-2">
+            We're delighted to help you plan your dream getaway. Whether you
+            have questions, need assistance with your bookings, or just want to
+            chat about travel, we're here for you.
+          </p>
+          <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.8vw] lg:text-[2.5vw] xl:text-[2.3vw] font-bold mb-10">
+            Reach out to us using the following contact options:
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
