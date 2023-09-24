@@ -390,11 +390,15 @@ function About() {
               </h3>
             </div>
             <div className="">
-              <img src="" alt="" srcset="" className="" />
               <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
                 Social Media:
                 <br /> Connect with us on
               </p>
+              <div className="flex justify-center gap-2">
+              <img src={FD} alt="" srcset="" className="w-[20px]" />
+              <img src={Insta} alt="" srcset="" className="w-[20px]" />
+              <img src={X} alt="" srcset="" className="w-[20px]" />
+              </div>
             </div>
             <div className="flex items-center">
               <p className="text-[3.2vw] min-[550px]:text-[3vw]  min-[700px]:text-[2.6vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] flex items-center  w-[300px] min-[450px]:w-[350px] min-[550px]:w-[450px] min-[700px]:w-[550px]  min-[850px]:w-[650px] min-[920px]:w-[500px] lg:w-[350px] xl:w-[330px]  ">
@@ -418,12 +422,12 @@ function About() {
                 tea together
               </h3>
             </div>
-            <div className="">
-              <img src="" alt="" srcset="" className="" />
-              <p className="text-[3.7vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[3vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[2vw] lg:text-[1.2vww] lg:text-[1.3vw] font-semibold">
-                Address: <br />
-                123 Adventure Avenue, Traveler's
-                <br /> Haven, World Wanderland
+            <div className="flex">
+              <img src={Location} alt="" srcset="" className="h-[20px] mr-[-14px]" />
+              <p className="text-[3.6vw] mb-3  min-[550px]:text-[3.3vw]  min-[700px]:text-[2.9vw] min-[850px]:text-[2.2vw] min-[1024px]:text-[1.9vw] lg:text-[1.4vw] xl:text-[1.2vw] font-semibold">
+                Address: 
+                123 Adventure Avenue,<br /> Traveler's
+                 Haven, World Wanderland
               </p>
             </div>
             <div className="flex items-center">
@@ -462,11 +466,14 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mx-2 ">
+
+
+
+        <div className="flex justify-center mx-2 text-[2.7vw] min-[550px]:text-[2.6vw]  min-[700px]:text-[2.5vw] min-[850px]:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw]">
         <div className="page-5 my-10 flex flex-wrap lg:hidden flex-col gap-10 justify-center mx-10">
           <div className="text-white flex items-center my-10 ">
             <img src={Hours} alt="" className="w-[20%] bg-white z-10 mr-3" />
-            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
+            <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5 ">
               Hours Of Operation : **
             </div>
           </div>
@@ -479,7 +486,7 @@ function About() {
             </div>
           </div>
           <div className="text-white flex items-center  my-4">
-            <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3" />
+            <img src={Sunday} alt="" className="w-[20%] bg-white z-10 mr-3 " />
             <div class="z-0 bg-[#183B83] rounded-full flex items-center py-3 px-5">
               Sunday: Closed (Because even
               
